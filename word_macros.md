@@ -1,7 +1,10 @@
 ## Security researching microsoft word (.docx) documents
 ### Observation 1: Word trusted locations
-``` C:\Users\[User]\AppData\Roaming\Microsoft\Word\Startup\
-C:\Users\[User]\AppData\Roaming\Microsoft\Templates\ ```
+```
+C:\Users\[User]\AppData\Roaming\Microsoft\Word\Startup\ 
+C:\Users\[User]\AppData\Roaming\Microsoft\Templates\
+```
+
 Some locations are deemed as "trusted" locations by word, which means running a word document from there can run macros or activeX without prompt. This could potentially be leveraged by threat actors who could first write a word doc into that location and runit thereby any macros associated.
 
 ### Observation 2: Word extensions for macro enabled/disabled documents
