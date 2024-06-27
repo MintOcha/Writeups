@@ -1,13 +1,7 @@
 ## Security researching microsoft word (.docx) documents
-### Observation 1: Word trusted locations
-```
-C:\Users\[User]\AppData\Roaming\Microsoft\Word\Startup\ 
-C:\Users\[User]\AppData\Roaming\Microsoft\Templates\
-```
 
-Some locations are deemed as "trusted" locations by word, which means running a word document from there can run macros or activeX without prompt. This could potentially be leveraged by threat actors who could first write a word doc into that location and runit thereby any macros associated.
 
-### Observation 2: Word extensions for macro enabled/disabled documents
+### Word extensions for macro enabled/disabled documents
 Under normal circumstances, .docm is the default extension for any macros added. However through the developer ribbon, macros can be added without changing the file extension. This greatly increases the risk of a reverse shell running in the background, especially one that tunnels through trusted channels like discord.
 Here's how!!
 1.) Check developer under File -> Options -> Customise Ribboms -> Right box -> Developer
@@ -32,6 +26,13 @@ Referenced from [Reverse Shell From Word Document (Agis, 2021)](https://github.c
 The above script, when pasted in as a module (macro), opens the shell and schedules a shutdown.
 I tested it on a docx outside of trusted directory and word protection (editing enabled) which ran without any prompts.
 
+### Word trusted locations
+```
+C:\Users\[User]\AppData\Roaming\Microsoft\Word\Startup\ 
+C:\Users\[User]\AppData\Roaming\Microsoft\Templates\
+```
+
+Some locations are deemed as "trusted" locations by word, which means running a word document from there can run macros or activeX without prompt. This could potentially be leveraged by threat actors who could first write a word doc into that location and runit thereby any macros associated. It's however, unlikely for this to be leveraged due to a prerequisite of the attacker already having access
 
 ### More possibilities?
 
