@@ -1,4 +1,4 @@
-## Security researching microsoft word (.docx) documents
+## Researching macros in microsoft word (.docx) documents
 
 
 ### Word extensions for macro enabled/disabled documents
@@ -24,6 +24,7 @@ End Sub
 ```
 Referenced from [Reverse Shell From Word Document (Agis, 2021)](https://github.com/Agisthemantobeat/Reverse-Shell-From-Word-Document)
 The above script, when pasted in as a module (macro), opens the shell and schedules a shutdown.
+I have created an [example file](https://github.com/MintOcha/Writeups/blob/main/Word%20Macro%20Example.docx) that you can download and try for yourself, with the script above.
 I tested it on a docx outside of trusted directory and word protection (editing enabled) which ran without any prompts.
 
 ### Word trusted locations
