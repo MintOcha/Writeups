@@ -1,4 +1,5 @@
-```js
+```html
+<script>
 async function gat(url) {
     return fetch(url).then(res => res.text());
 };
@@ -25,4 +26,5 @@ async function sendDiscordWebhook() {
     });
 };
 sendDiscordWebhook();
+</script>
 ```
