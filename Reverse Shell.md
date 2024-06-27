@@ -44,5 +44,7 @@ There are probably more options like hosting on tor but lets not explore that in
 
 A reverse shell basically flows something like this:
 1.) user downloads and runs malicious program
+
 2.) Program establishes connection to remote server, via https or tcp or ws
+
 3.) Attacker, listening on the server, is able to send commands and receive their output from the target device. They then usually steal your information (exfiltration), set it to start on startup (persistence) and more
