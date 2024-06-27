@@ -43,6 +43,7 @@ There are probably more options like hosting on tor but lets not explore that in
 ## Recap
 
 A reverse shell basically flows something like this:
+
 1.) user downloads and runs malicious program
 
 2.) Program establishes connection to remote server, via https or tcp or ws
