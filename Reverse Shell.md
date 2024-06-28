@@ -2,7 +2,10 @@
 
 ## Introduction
 Rev shells, a type of virus, is a program that when ran on the target machine, establishes a connection between the target machine and a C2 (Command & Control) server. The target machine then receives commands (or, opens a shell) where the attacker could execute commands and gain RCE priveilages. Though this doesn't necessarily guarantee admin preveilages, the attacker could then use this RCE as a gateway to install spyware, other malware, disable windows defender, ransomware, and persistence software. They could also use your computer to further spread the worm, steal your personal information and compromise the local network.
+
 Try: [Reverse Shell Generator](https://www.revshells.com/)
+
+Try it yourself!: [Reverse shell cheatsheet](https://swisskyrepo.github.io/InternalAllTheThings/cheatsheets/shell-reverse-cheatsheet/)
 
 Reverse shells payloads mainly come in a few different forms:
 ### Single-stage payload
