@@ -1,8 +1,8 @@
-## Researching macros in microsoft word (.docx) documents
+## Researching macros in microsoft word (.docm) documents
 
 
 ### Word extensions for macro enabled/disabled documents
-Under normal circumstances, .docm is the default extension for any macros added. However through the developer ribbon, macros can be added without changing the file extension. This greatly increases the risk of a reverse shell running in the background, especially one that tunnels through trusted channels like discord.
+Under normal circumstances, .docm is the default extension for any macros added. However through the developer ribbon, macros can be added without changing the file extension. This greatly increases the risk of a reverse shell running in the background, especially one that tunnels through trusted channels like discord. However, this is saved on the local machine and NOT the file due to Microsoft's security measures.
 Here's how!!
 1.) Check developer under File -> Options -> Customise Ribboms -> Right box -> Developer
 2.) Create a new macro and paste in the script
