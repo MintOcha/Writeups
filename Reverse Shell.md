@@ -18,7 +18,7 @@ There are existing C2 frameworks like metasploit, sliver c2 (the free ones) and 
 
 ## Payload delivery
 1.) Powershell script 
-Read: [Reverse shell for windows powershell generation]|(https://github.com/Agisthemantobeat/Reverse-Shell-From-Word-Document)
+Read: [Reverse shell for windows powershell generation](https://github.com/Agisthemantobeat/Reverse-Shell-From-Word-Document)
 Usually a 1 liner, pastable right into powershell (requires some physical access or a malicious USB drive)
 
 2.) Executables/scripts
